@@ -1,0 +1,87 @@
+/* Profile Header Styling */
+.profile-header {
+    background-color: #333;
+    color: white;
+}
+
+.profile-banner {
+    height: 200px;
+    position: relative;
+    background-color: #1a1a1a;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.profile-info {
+    margin-top: -50px;
+}
+
+.avatar-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+}
+
+.user-info h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.status {
+    font-size: 1.2rem;
+    color: #9a9a9a;
+}
+
+.stats span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Navigation Bar */
+.profile-nav .nav-pills .nav-link {
+    color: #ccc;
+}
+
+.profile-nav .nav-pills .nav-link.active {
+    background-color: #0a74da;
+    color: white;
+}
+
+/* Game Stats and Activity Feed */
+.game-stats h4, .activity-feed h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.list-group-item {
+    background-color: #2a2a2a;
+    color: white;
+    border: none;
+}
+
+.list-group-item:hover {
+    background-color: #444;
+}
+
+/* Friends List */
+.friends-list h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.friends-list .list-group-item {
+    background-color: #2a2a2a;
+    color: white;
+    border: none;
+}
+
+.friends-list .list-group-item:hover {
+    background-color: #444;
+}
