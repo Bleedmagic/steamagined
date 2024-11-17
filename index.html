@@ -9,6 +9,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
+		<meta name="author" content="Victor Vasquez" />
 
 		<!-- Favicon -->
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
@@ -161,6 +162,18 @@
 			</symbol>
 		</svg>
 
+		<!-- Other Icons -->
+		<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+			<symbol id="keyboard" viewBox="0 0 16 16">
+				<path
+					d="M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"
+				/>
+				<path
+					d="M13 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm0-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-5 0A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75zm2 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25zm1 2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-5-2A.25.25 0 0 1 6.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 6 8.75zm-2 0A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75zm-2 0A.25.25 0 0 1 2.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 8.75zm11-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-2 0a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-2 0A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75zm-2 0A.25.25 0 0 1 7.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 7 6.75zm-2 0A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75zm-3 0A.25.25 0 0 1 2.25 6h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5A.25.25 0 0 1 2 6.75zm0 4a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm2 0a.25.25 0 0 1 .25-.25h5.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-5.5a.25.25 0 0 1-.25-.25z"
+				/>
+			</symbol>
+		</svg>
+
 		<!-- Scroll-to-Top Button -->
 		<button
 			type="button"
@@ -185,9 +198,118 @@
 			</button>
 		</div>
 		<audio id="bg-music" loop>
-			<source src="audio/upbeat-town-theme.ogg" type="audio/ogg" />
+			<!-- <source src="audio/upbeat-town-theme.ogg" type="audio/ogg" /> -->
+			<source src="audio/rocket-jump-waltz.mp3" type="audio/mp3" />
 			Your browser does not support the audio element.
 		</audio>
+
+		<!-- Keyboard Shortcut Modal -->
+		<div
+			class="modal fade"
+			id="shortcutsModal"
+			tabindex="-1"
+			aria-labelledby="shortcutsModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div
+					class="modal-content"
+					style="
+						background-color: #3a2c3d;
+						color: #f4d9e7;
+						border: 1px solid #a0788e;
+					"
+				>
+					<div class="modal-header" style="border-bottom: 1px solid #a0788e">
+						<h5
+							class="modal-title"
+							id="shortcutsModalLabel"
+							style="color: #e5aac4"
+						>
+							Keyboard Shortcuts
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+							style="
+								filter: invert(80%) sepia(25%) saturate(450%) hue-rotate(300deg)
+									brightness(90%) contrast(80%);
+							"
+						></button>
+					</div>
+					<div class="modal-body">
+						<p>
+							<kbd
+								style="
+									background-color: #5e465a;
+									color: #f4d9e7;
+									padding: 0.2rem 0.4rem;
+									border-radius: 0.2rem;
+								"
+								>P</kbd
+							>
+							: Play/Pause Music
+						</p>
+						<p>
+							<kbd
+								style="
+									background-color: #5e465a;
+									color: #f4d9e7;
+									padding: 0.2rem 0.4rem;
+									border-radius: 0.2rem;
+								"
+								>T</kbd
+							>
+							: Change Themes
+						</p>
+						<p>
+							<kbd
+								style="
+									background-color: #5e465a;
+									color: #f4d9e7;
+									padding: 0.2rem 0.4rem;
+									border-radius: 0.2rem;
+								"
+								>↑ ↓</kbd
+							>
+							: Up and Down Arrow Keys to Move
+						</p>
+						<p>
+							<kbd
+								style="
+									background-color: #5e465a;
+									color: #f4d9e7;
+									padding: 0.2rem 0.4rem;
+									border-radius: 0.2rem;
+								"
+								>Enter</kbd
+							>
+							: You Got It
+						</p>
+					</div>
+					<div class="modal-footer" style="border-top: 1px solid #a0788e">
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-dismiss="modal"
+							id="gotItBtn"
+							style="
+								background-color: #a0788e;
+								border-color: #7a5e6d;
+								color: #f4d9e7;
+								transition: background-color 0.3s ease, transform 0.2s ease;
+							"
+							onmouseover="this.style.backgroundColor='#7a5e6d'; this.style.transform='scale(1.05)';"
+							onmouseout="this.style.backgroundColor='#a0788e'; this.style.transform='scale(1)';"
+						>
+							Got it!
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Header -->
 		<div class="container" style="max-width: 1000px">
@@ -202,7 +324,7 @@
 						class="me-2"
 						style="width: 40px; height: 32px; object-fit: contain"
 					/>
-					<span class="fs-4">Victor Vasquez</span>
+					<span class="fs-4">Victor Vasquez | Portfolio</span>
 				</a>
 
 				<button
@@ -255,35 +377,179 @@
 								Steam
 							</a>
 						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#"
+								data-bs-toggle="modal"
+								data-bs-target="#shortcutsModal"
+							>
+								<svg class="bi" width="16" height="16">
+									<use xlink:href="#keyboard" />
+								</svg>
+								Shortcuts
+							</a>
+						</li>
 					</ul>
 				</div>
 			</header>
 		</div>
 
 		<!-- Main Content -->
-		<div class="container" style="height: 1000px">
+		<div class="container" style="max-width: 1000px">
 			<main>
-				<section id="section1"></section>
+				<!-- Introduction Section -->
+				<section id="introduction">
+					<div class="mb-4"></div>
+				</section>
+
+				<!-- Artworks Section-->
+				<section id="artworks">
+					<div class="text-center mb-4">
+						<h2><b>Artworks</b></h2>
+						<p>
+							Through my 7 years on Steam, I have created, received, and commissioned
+							renders of my Team Fortress 2 Medic loadout.
+						</p>
+					</div>
+					<div
+						id="myCarousel"
+						class="carousel slide mb-6"
+						data-bs-ride="carousel"
+					>
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#myCarousel"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#myCarousel"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#myCarousel"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#myCarousel"
+								data-bs-slide-to="3"
+								aria-label="Slide 4"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#myCarousel"
+								data-bs-slide-to="4"
+								aria-label="Slide 5"
+							></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img
+									src="img/art-1.png"
+									class="d-block w-100"
+									alt="First slide"
+								/>
+								<div class="container">
+									<div class="carousel-caption text-start"></div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="img/art-2.png"
+									class="d-block w-100"
+									alt="Second slide"
+								/>
+								<div class="container">
+									<div class="carousel-caption"></div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="img/art-3.png"
+									class="d-block w-100"
+									alt="Third slide"
+								/>
+								<div class="container">
+									<div class="carousel-caption text-end"></div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="img/art-4.png"
+									class="d-block w-100"
+									alt="Fourth slide"
+								/>
+								<div class="container">
+									<div class="carousel-caption text-start"></div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="img/art-5.png"
+									class="d-block w-100"
+									alt="Fifth slide"
+								/>
+								<div class="container">
+									<div class="carousel-caption text-end"></div>
+								</div>
+							</div>
+						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#myCarousel"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#myCarousel"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</section>
+
+				<!-- Screenshots Section -->
+				<section id="screenshots"></section>
 			</main>
 		</div>
 
 		<!-- Footer -->
-		<div class="container" style="max-width: 1000px">
+		<div class="container" style="max-width: 1000px; font-weight: bold">
 			<footer
 				class="d-flex flex-column align-items-center justify-content-center py-3 my-2 border-top"
 			>
 				<div class="col-md-10 my-2 text-center">
-					<strong
-						><span class="text-body-secondary">
-							© Copyright &amp; Stuff 2024. Made With 💖 | View on
-							<a
-								href="https://github.com/Bleedmagic/Steamagined"
-								target="_blank"
-								style="color: inherit"
-								>Github</a
-							>
-						</span></strong
-					>
+					<span class="text-body-secondary">
+						© Copyright &amp; Stuff 2024. Made With 💖 | View on
+						<a
+							href="https://github.com/Bleedmagic/Steamagined"
+							target="_blank"
+							style="color: inherit"
+							>Github</a
+						>
+					</span>
 				</div>
 			</footer>
 		</div>
@@ -314,11 +580,38 @@
 		<script src="vendor/typed.js/typed.umd.js"></script>
 		<script>
 			var typed1 = new Typed("#text-animation-typing-1", {
-				strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+				strings: ["Welcome to Steamagined.", "Enjoy your stay!"],
 				loop: true,
 				typeSpeed: 60,
 				backSpeed: 25,
 				backDelay: 1500,
+				showCursor: true,
+				cursorChar: "_",
+			});
+		</script>
+
+		<!-- Theme Button KeyDown Script -->
+		<script>
+			const themeButton = document.getElementById("bd-theme");
+
+			document.addEventListener("keydown", function (event) {
+				if (event.key === "t" || event.key === "T") {
+					event.preventDefault();
+					toggleDropdown();
+				}
+			});
+
+			function toggleDropdown() {
+				themeButton.click();
+			}
+		</script>
+
+		<!-- Got it Button KD Script -->
+		<script>
+			document.addEventListener("keydown", function (event) {
+				if (event.key === "Enter") {
+					document.getElementById("gotItBtn").click();
+				}
 			});
 		</script>
 
@@ -341,14 +634,23 @@
 
 		<!-- Play/Pause Music Script-->
 		<script>
-			// Get the elements
 			const playButton = document.getElementById("play-music");
 			const music = document.getElementById("bg-music");
 			const playIcon = document.getElementById("play-icon");
 			const pauseIcon = document.getElementById("pause-icon");
 
-			// Toggle play/pause on button click
 			playButton.addEventListener("click", function () {
+				toggleMusic();
+			});
+
+			document.addEventListener("keydown", function (event) {
+				if (event.key === "p" || event.key === "P") {
+					event.preventDefault();
+					toggleMusic();
+				}
+			});
+
+			function toggleMusic() {
 				if (music.paused) {
 					music.play();
 					playIcon.classList.add("d-none");
@@ -358,7 +660,7 @@
 					playIcon.classList.remove("d-none");
 					pauseIcon.classList.add("d-none");
 				}
-			});
+			}
 		</script>
 	</body>
 </html>

@@ -65,19 +65,55 @@ body {
 	right: 15px;
 	background-color: #712cf9;
 	color: white;
-	padding: 8px 12px; /* Adjust padding for smaller size */
+	padding: 8px 12px;
 	border-radius: 10px;
-	display: none; /* Initially hidden */
-	font-size: 16px; /* Adjust font size for smaller icon */
+	display: none;
 	border: none;
 	cursor: pointer;
 }
 
-@media (max-width: 768px) {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: rgba(0, 0, 0, 0.75);
+	border: 2px solid rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#myCarousel .carousel-inner img {
+	height: 400px;
+	object-fit: cover;
+	width: 100%;
+}
+
+.modal.fade .modal-dialog {
+	transform: translateY(-30px);
+	opacity: 0;
+	transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.modal.show .modal-dialog {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+@media (max-width: 1124px) {
 	#play-music {
-		display: none !important; /* Hides the button */
+		display: none !important;
 	}
 	.bd-mode-toggle {
-		display: none !important; /* Hide the dropdown container */
+		display: none !important;
+	}
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 575.98px) {
+	#scrollToTopBtn {
+		display: none !important;
 	}
 }
