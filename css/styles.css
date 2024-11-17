@@ -1,19 +1,83 @@
 @font-face {
 	font-family: "Roboto";
-	src: url("fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+	src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Roboto";
-	src: url("fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+	src: url("../fonts/Roboto-Bold.ttf") format("truetype");
 	font-weight: bold;
 	font-style: normal;
 }
 
+html[data-bs-theme="dark"] {
+	--body-bg-color: #1b1f22;
+	/* --body-bg-color: #282828; */
+	--body-text-color: #dda0dd;
+}
+
+html[data-bs-theme="light"] {
+	--body-bg-color: #fff;
+	--body-text-color: #000000;
+}
+
 body {
 	font-family: "Roboto", sans-serif;
-	background-color: #1B1F22;
-	color: #fff;
+	background-color: var(--body-bg-color);
+	color: var(--body-text-color);
+}
+
+.btn-bd-primary {
+	--bd-violet-bg: #712cf9;
+	--bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+	--bs-btn-font-weight: 600;
+	--bs-btn-color: var(--bs-white);
+	--bs-btn-bg: var(--bd-violet-bg);
+	--bs-btn-border-color: var(--bd-violet-bg);
+	--bs-btn-hover-color: var(--bs-white);
+	--bs-btn-hover-bg: #6528e0;
+	--bs-btn-hover-border-color: #6528e0;
+	--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+	--bs-btn-active-color: var(--bs-btn-hover-color);
+	--bs-btn-active-bg: #5a23c8;
+	--bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+	z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+	display: block !important;
+}
+
+.bi {
+	vertical-align: -0.125em;
+	fill: currentColor;
+}
+
+.scroll-to-top {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	background-color: #712cf9;
+	color: white;
+	padding: 8px 12px; /* Adjust padding for smaller size */
+	border-radius: 10px;
+	display: none; /* Initially hidden */
+	font-size: 16px; /* Adjust font size for smaller icon */
+	border: none;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	#play-music {
+		display: none !important; /* Hides the button */
+	}
+	.bd-mode-toggle {
+		display: none !important; /* Hide the dropdown container */
+	}
 }
