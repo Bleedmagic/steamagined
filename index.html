@@ -41,6 +41,14 @@
 	</head>
 
 	<body>
+		<!-- Zoom Recommendation Popup -->
+		<div id="popup" class="popup">
+			<span id="popup-text"
+				>Use 100% zoom and a desktop for a better experience.</span
+			>
+			<span id="popup-close" class="popup-close">&times;</span>
+		</div>
+
 		<!-- Theme Toggle Icons -->
 		<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
 			<symbol id="check2" viewBox="0 0 16 16">
@@ -399,19 +407,134 @@
 		<div class="container" style="max-width: 1000px">
 			<main>
 				<!-- Introduction Section -->
-				<section id="introduction">
-					<div class="mb-4"></div>
+				<section id="introduction" class="px-4 py-5">
+					
 				</section>
 
-				<!-- Artworks Section-->
-				<section id="artworks">
-					<div class="text-center mb-4">
-						<h2><b>Artworks</b></h2>
-						<p>
-							Through my 7 years on Steam, I have created, received, and commissioned
-							renders of my Team Fortress 2 Medic loadout.
-						</p>
+				<hr class="le-divider" />
+
+				<!-- Personal Milestones Section -->
+				<section id="personal-milestones" class="px-4 py-5">
+					<h2 class="pb-2 border-bottom">Personal Milestones</h2>
+					<p class="px-4 py-2">
+						It is astonishing how far I took this hobby. We all know at some
+						point that it became an addiction, and ruined some opportunities.
+						What matters is I had fun!
+					</p>
+
+					<div
+						class="row row-cols-1 row-cols-lg-3 align-items-stretch g-2 py-2"
+					>
+						<div class="col">
+							<div
+								class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-gradient-col1"
+							>
+								<img
+									src="img/team-fortress-2.jpg"
+									alt="Team Fortress 2"
+									class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50 image-zoom"
+								/>
+								<div
+									class="card-content d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+								>
+									<h3
+										class="pt-1 mt-1 mb-4 display-7 lh-2 fw-bold"
+										style="white-space: nowrap"
+									>
+										Team Fortress 2
+									</h3>
+									<ul class="d-flex list-unstyled mt-auto">
+										<li class="me-auto">
+											<i
+												class="bi bi-controller text-white"
+												style="font-size: 48px"
+											></i>
+										</li>
+										<li class="d-flex align-items-center">
+											<h4>5435 hours</h4>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div
+								class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-gradient-col2"
+							>
+								<img
+									src="img/steam-profile.jpg"
+									alt="Team Fortress 2"
+									class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50 image-zoom"
+								/>
+								<div
+									class="card-content d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+								>
+									<h3
+										class="pt-1 mt-1 mb-4 display-7 lh-2 fw-bold"
+										style="white-space: nowrap"
+									>
+										Steam Account
+									</h3>
+									<ul class="d-flex list-unstyled mt-auto">
+										<li class="me-auto">
+											<i
+												class="bi bi-steam text-white"
+												style="font-size: 48px"
+											></i>
+										</li>
+										<li class="d-flex align-items-center">
+											<h4>7 years</h4>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div
+								class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-gradient-col3"
+							>
+								<img
+									src="img/steam-friends.png"
+									alt="Team Fortress 2"
+									class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50 image-zoom"
+								/>
+								<div
+									class="card-content d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+								>
+									<h3
+										class="pt-1 mt-1 mb-4 display-7 lh-2 fw-bold"
+										style="white-space: nowrap"
+									>
+										Steam Friends
+									</h3>
+									<ul class="d-flex list-unstyled mt-auto">
+										<li class="me-auto">
+											<i
+												class="bi bi-people-fill text-white"
+												style="font-size: 48px"
+											></i>
+										</li>
+										<li class="d-flex align-items-center">
+											<h4>714 friends</h4>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
+				</section>
+
+				<hr class="le-divider" />
+
+				<!-- Artworks Section-->
+				<section id="artworks" class="px-4 py-5">
+					<h2 class="pb-2 border-bottom"><b>Artworks</b></h2>
+					<p class="px-4 py-2">
+						Through my 7 years on Steam, I have created, received, and
+						commissioned renders of my Team Fortress 2 Medic loadout.
+					</p>
 					<div
 						id="myCarousel"
 						class="carousel slide mb-6"
@@ -530,8 +653,10 @@
 					</div>
 				</section>
 
+				<hr class="le-divider" />
+
 				<!-- Screenshots Section -->
-				<section id="screenshots"></section>
+				<section id="screenshots" class="px-4 py-5"></section>
 			</main>
 		</div>
 
@@ -661,6 +786,22 @@
 					pauseIcon.classList.add("d-none");
 				}
 			}
+		</script>
+
+		<!-- Zoom Recommendation Popup Script -->
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var popup = document.getElementById("popup");
+				var popupClose = document.getElementById("popup-close");
+
+				popupClose.addEventListener("click", function () {
+					popup.style.display = "none";
+				});
+
+				setTimeout(function () {
+					popup.style.opacity = "0";
+				}, 5000);
+			});
 		</script>
 	</body>
 </html>
