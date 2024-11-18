@@ -50,6 +50,12 @@ body {
 	color: var(--body-text-color);
 }
 
+/* .container {
+	border-left: 2px solid var(--bd-custom-bg);
+	border-right: 2px solid var(--bd-custom-bg);
+	padding: 10px;
+} */
+
 .border-bottom {
 	border-bottom: 2px solid var(--bd-custom-bg) !important;
 }
@@ -183,6 +189,7 @@ footer {
 	display: none;
 	border: none;
 	cursor: pointer;
+	z-index: 1500;
 }
 
 .carousel-control-prev-icon,
@@ -230,7 +237,7 @@ section {
 }
 
 .card-content {
-	z-index: 2;
+	z-index: 5;
 }
 
 .image-zoom {
@@ -269,20 +276,21 @@ section {
 	margin-top: -20px;
 }
 
-.popup {
+#popup {
 	position: fixed;
 	bottom: 18px;
-	right: 69px;
+	left: 50%;
+	transform: translateX(-50%);
 	background-color: var(--bd-custom-bg);
 	color: white;
 	border-radius: 5px;
 	padding: 5px 15px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	opacity: 1;
-	z-index: 9999;
+	z-index: 2000;
 }
 
-.popup-close {
+#popup-close {
 	position: absolute;
 	top: 5px;
 	right: 5px;
@@ -297,11 +305,11 @@ section {
 	width: 100%;
 	height: 100vh;
 	background-color: var(--body-bg-color);
-	z-index: 100;
+	z-index: 2000;
 	background-image: url(../img/tf2-heavy.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 50%;
+	background-size: 25%;
 	opacity: 1;
 	transition: opacity 1s ease-out;
 }
@@ -313,15 +321,6 @@ section {
 .navbar-collapse {
 	display: flex;
 	justify-content: flex-end;
-}
-
-@media (max-width: 1124px) {
-	#play-music {
-		display: none !important;
-	}
-	.bd-mode-toggle {
-		display: none !important;
-	}
 }
 
 @media (max-width: 575.98px) {
@@ -346,6 +345,15 @@ section {
 
 	.navbar-nav .nav-item {
 		margin: 0 10px;
+	}
+}
+
+@media (max-width: 1124px) {
+	#play-music {
+		display: none !important;
+	}
+	.bd-mode-toggle {
+		display: none !important;
 	}
 }
 

@@ -8,7 +8,7 @@ playButton.addEventListener("click", function () {
 });
 
 document.addEventListener("keydown", function (event) {
-	if (event.key === "p" || event.key === "P") {
+	if (event.key === "ArrowRight") {
 		event.preventDefault();
 		toggleMusic();
 	}

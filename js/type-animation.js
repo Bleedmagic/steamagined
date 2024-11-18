@@ -13,7 +13,7 @@ var typed1 = new Typed("#text-animation-typing-1", {
 });
 
 var typed2 = new Typed("#text-animation-typing-2", {
-	strings: ["A portfolio focused on my Steam gaming!<br>Feel free to explore!"],
+	strings: [""],
 	loop: false,
 	typeSpeed: 60,
 	backSpeed: 25,

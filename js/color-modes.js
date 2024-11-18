@@ -91,9 +91,8 @@
 	});
 
 	document.addEventListener("keydown", function (event) {
-		if (event.key === "t" || event.key === "T") {
-      event.preventDefault();
-      
+		if (event.key === "ArrowLeft") {
+			event.preventDefault();
 			toggleTheme();
 		}
 	});

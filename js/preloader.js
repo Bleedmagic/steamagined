@@ -3,6 +3,7 @@ $(document).ready(function () {
 
 	setTimeout(function () {
 		$("#preloader").fadeOut();
+		$("#popup").fadeOut();
 		$("body").css("overflow", "auto");
 		$("html, body").animate({ scrollTop: 0 }, "fast");
 	}, 2500);
