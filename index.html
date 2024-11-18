@@ -41,10 +41,13 @@
 	</head>
 
 	<body>
+		<!-- Preloader -->
+		<div id="preloader"></div>
+
 		<!-- Zoom Recommendation Popup -->
 		<div id="popup" class="popup">
 			<span id="popup-text"
-				>Use 100% zoom and a desktop for a better experience.</span
+				>Use 80-100% zoom and a desktop for a better experience.</span
 			>
 			<span id="popup-close" class="popup-close">&times;</span>
 		</div>
@@ -274,30 +277,6 @@
 							>
 							: Change Themes
 						</p>
-						<p>
-							<kbd
-								style="
-									background-color: #5e465a;
-									color: #f4d9e7;
-									padding: 0.2rem 0.4rem;
-									border-radius: 0.2rem;
-								"
-								>↑ ↓</kbd
-							>
-							: Up and Down Arrow Keys to Move
-						</p>
-						<p>
-							<kbd
-								style="
-									background-color: #5e465a;
-									color: #f4d9e7;
-									padding: 0.2rem 0.4rem;
-									border-radius: 0.2rem;
-								"
-								>Enter</kbd
-							>
-							: You Got It
-						</p>
 					</div>
 					<div class="modal-footer" style="border-top: 1px solid #a0788e">
 						<button
@@ -322,7 +301,7 @@
 		</div>
 
 		<!-- Header -->
-		<div class="container" style="max-width: 1000px">
+		<div class="container fade-in" style="max-width: 1000px">
 			<header class="navbar navbar-expand-md py-4 mb-4 border-bottom">
 				<a
 					href="./index.html"
@@ -334,7 +313,7 @@
 						class="me-2"
 						style="width: 40px; height: 32px; object-fit: contain"
 					/>
-					<span class="fs-4">Victor Vasquez | Portfolio</span>
+					<span class="fs-4 header-title">Victor Vasquez | Portfolio</span>
 				</a>
 
 				<button
@@ -350,7 +329,7 @@
 				</button>
 
 				<div class="collapse navbar-collapse" id="collapsibleNavId">
-					<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+					<ul class="navbar-nav ms-auto mt-2 mt-lg-0 center-nav">
 						<li class="nav-item">
 							<a
 								class="nav-link"
@@ -410,19 +389,16 @@
 			<main>
 				<!-- Introduction Section -->
 				<section id="introduction" class="px-4 py-5 fade-in">
-					<h1 class="text-center" style="margin-bottom: 5rem">
+					<h1 class="text-center mb-5" style="height: 200px">
 						<span id="text-animation-typing-1"></span>
 					</h1>
 				</section>
 
-				<hr class="le-divider" />
+				<hr class="hr-divider" />
 
-				<!-- Personal Milestones Section -->
-				<section id="personal-milestones" class="px-4 py-5 fade-in">
-					<h1 class="text-center" style="margin-bottom: 5rem">
-						Personal Milestones
-					</h1>
-
+				<!-- Personal Achievements Section -->
+				<section id="personal-achievements" class="px-4 py-5 fade-in">
+					<h1 class="text-center mb-5">Personal Achievements</h1>
 					<div
 						class="row row-cols-1 row-cols-lg-3 align-items-stretch g-2 py-2"
 					>
@@ -525,13 +501,15 @@
 							</div>
 						</div>
 					</div>
+
+					<p class="text-center mt-5">WRITE SOMETHING HERE</p>
 				</section>
 
-				<hr class="le-divider" />
+				<hr class="hr-divider" />
 
 				<!-- Artworks Section-->
 				<section id="artworks" class="px-4 py-5 fade-in">
-					<h1 class="text-center" style="margin-bottom: 5rem">Artworks</h1>
+					<h1 class="text-center mb-5">Artworks</h1>
 					<div
 						id="myCarousel"
 						class="carousel slide mb-6"
@@ -648,29 +626,35 @@
 							<span class="visually-hidden">Next</span>
 						</button>
 					</div>
+
+					<p class="text-center mt-5">WRITE SOMETHING HERE</p>
 				</section>
 
-				<hr class="le-divider" />
+				<hr class="hr-divider" />
 
-				<!-- Screenshots Section -->
-				<section id="screenshots" class="px-4 py-5 fade-in">
-					<h1 class="text-center" style="margin-bottom: 5rem">Screenshots</h1>
-					<div class="row featurette">
+				<!-- Memorable Moments Section -->
+				<section id="memorable-moments" class="px-4 py-5 fade-in">
+					<h1 class="text-center mb-5">Memorable Moments</h1>
+
+					<div class="row featurette mt-4">
 						<div class="col-md-7">
 							<h2 class="featurette-heading fw-normal lh-1">
-								Sueño Imposible
-								<span class="text-body-secondary">It’ll blow your mind.</span>
+								Don Quixote <br />
+								<span class="text-body-secondary">Limbus Company</span>
 							</h2>
 							<p class="lead">
-								Some great placeholder content for the first featurette here.
-								Imagine some exciting prose here.
+								Canto 7 just released last month and it had me bawling my eyes
+								out as it tackles about family, dreams, and loneliness.
+							</p>
+							<p>
+								To dream the impossible dream. To fight the unbeatable foe...
 							</p>
 						</div>
 						<div class="col-md-5">
 							<img
 								src="img/don-quixote.jpg"
 								alt="Descriptive text for the image"
-								class="featurette-image img-fluid mx-auto"
+								class="featurette-image img-fluid mx-auto img-rounded-square"
 								width="500"
 								height="500"
 							/>
@@ -682,20 +666,16 @@
 					<div class="row featurette">
 						<div class="col-md-7 order-md-2">
 							<h2 class="featurette-heading fw-normal lh-1">
-								Oh yeah, it’s that good.
-								<span class="text-body-secondary">See for yourself.</span>
+								Placeholder
+								<span class="text-body-secondary">Placeholder</span>
 							</h2>
-							<p class="lead">
-								Another featurette? Of course. More placeholder content here to
-								give you an idea of how this layout would work with some actual
-								real-world content in place.
-							</p>
+							<p class="lead">Placeholder</p>
 						</div>
 						<div class="col-md-5 order-md-1">
 							<img
 								src="img/bleedmagicbydrain.png"
 								alt="Descriptive text for the image"
-								class="featurette-image img-fluid mx-auto"
+								class="featurette-image img-fluid mx-auto img-rounded-square"
 								width="500"
 								height="500"
 							/>
@@ -707,21 +687,16 @@
 					<div class="row featurette">
 						<div class="col-md-7">
 							<h2 class="featurette-heading fw-normal lh-1">
-								And lastly, this one.
-								<span class="text-body-secondary">Checkmate.</span>
+								Placeholder
+								<span class="text-body-secondary">Placeholder</span>
 							</h2>
-							<p class="lead">
-								And yes, this is the last block of representative placeholder
-								content. Again, not really intended to be actually read, simply
-								here to give you a better view of what this would look like with
-								some actual content. Your content.
-							</p>
+							<p class="lead">Placeholder</p>
 						</div>
 						<div class="col-md-5">
 							<img
 								src="img/bleedmagicbydrain.png"
 								alt="Descriptive text for the image"
-								class="featurette-image img-fluid mx-auto"
+								class="featurette-image img-fluid mx-auto img-rounded-square"
 								width="500"
 								height="500"
 							/>
@@ -732,17 +707,17 @@
 		</div>
 
 		<!-- Footer -->
-		<div class="container" style="max-width: 1000px; font-weight: bold">
+		<div class="container fade-in" style="max-width: 1000px">
 			<footer
 				class="d-flex flex-column align-items-center justify-content-center py-3 my-2 border-top"
 			>
 				<div class="col-md-10 my-2 text-center">
-					<span class="text-body-secondary">
+					<span>
 						&copy; Copyright &amp; Stuff 2024. Made With 💖 | View on
 						<a
 							href="https://github.com/Bleedmagic/Steamagined"
 							target="_blank"
-							style="color: inherit"
+							style="color: inherit; text-decoration: wavy underline;"
 							>Github</a
 						>
 					</span>
@@ -774,130 +749,21 @@
 
 		<!-- Typed.js JavaScript Library -->
 		<script src="vendor/typed.js/typed.umd.js"></script>
-		<script>
-			var typed1 = new Typed("#text-animation-typing-1", {
-				strings: [
-					"Welcome to <i>Steamagined</i>.<br> A portfolio focused on my Steam gaming!<br>Feel free to explore!",
-				],
-				loop: false,
-				typeSpeed: 60,
-				backSpeed: 25,
-				backDelay: 1500,
-				showCursor: true,
-				cursorChar: "_",
-				contentType: "html",
-			});
-		</script>
-
-		<!-- Theme Button KeyDown Script -->
-		<script>
-			const themeButton = document.getElementById("bd-theme");
-
-			document.addEventListener("keydown", function (event) {
-				if (event.key === "t" || event.key === "T") {
-					event.preventDefault();
-					toggleDropdown();
-				}
-			});
-
-			function toggleDropdown() {
-				themeButton.click();
-			}
-		</script>
-
-		<!-- Got it Button KD Script -->
-		<script>
-			document.addEventListener("keydown", function (event) {
-				if (event.key === "Enter") {
-					document.getElementById("gotItBtn").click();
-				}
-			});
-		</script>
+		<script src="js/type-animation.js"></script>
 
 		<!-- Scroll-to-Top Script-->
-		<script>
-			$(window).scroll(function () {
-				if (
-					$(document).height() - $(window).scrollTop() - $(window).height() <
-					10
-				) {
-					$("#scrollToTopBtn").fadeIn();
-				} else {
-					$("#scrollToTopBtn").fadeOut();
-				}
-			});
-			$("#scrollToTopBtn").click(function () {
-				$("html, body").animate({ scrollTop: 0 }, "slow");
-			});
-		</script>
+		<script src="js/scroll-to-top.js"></script>
 
 		<!-- Play/Pause Music Script-->
-		<script>
-			const playButton = document.getElementById("play-music");
-			const music = document.getElementById("bg-music");
-			const playIcon = document.getElementById("play-icon");
-			const pauseIcon = document.getElementById("pause-icon");
-
-			playButton.addEventListener("click", function () {
-				toggleMusic();
-			});
-
-			document.addEventListener("keydown", function (event) {
-				if (event.key === "p" || event.key === "P") {
-					event.preventDefault();
-					toggleMusic();
-				}
-			});
-
-			function toggleMusic() {
-				if (music.paused) {
-					music.play();
-					playIcon.classList.add("d-none");
-					pauseIcon.classList.remove("d-none");
-				} else {
-					music.pause();
-					playIcon.classList.remove("d-none");
-					pauseIcon.classList.add("d-none");
-				}
-			}
-		</script>
+		<script src="js/play-pause-music.js"></script>
 
 		<!-- Zoom Recommendation Popup Script -->
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				var popup = document.getElementById("popup");
-				var popupClose = document.getElementById("popup-close");
-
-				popupClose.addEventListener("click", function () {
-					popup.style.display = "none";
-				});
-
-				setTimeout(function () {
-					popup.style.opacity = "0";
-				}, 5000);
-			});
-		</script>
+		<script src="js/zoom-popup.js"></script>
 
 		<!-- Fade-in Scroll Script -->
-		<script>
-			$(document).ready(function () {
-				function checkFadeInElements() {
-					$(".fade-in").each(function () {
-						const elementTop = $(this).offset().top;
-						const elementBottom = elementTop + $(this).outerHeight();
-						const viewportTop = $(window).scrollTop();
-						const viewportBottom = viewportTop + $(window).height();
-						
-						if (elementBottom > viewportTop && elementTop < viewportBottom) {
-							$(this).addClass("fade-in-visible");
-						} else {
-							$(this).removeClass("fade-in-visible");
-						}
-					});
-				}
-				checkFadeInElements();
-				$(window).on("scroll", checkFadeInElements);
-			});
-		</script>
+		<script src="js/fade-in-scroll.js"></script>
+
+		<!-- Preloader Script -->
+		<script src="js/preloader.js"></script>
 	</body>
 </html>
