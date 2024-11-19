@@ -1,6 +1,6 @@
-var typed1 = new Typed("#text-animation-typing-1", {
+var typed1 = new Typed("#text-animation-welcome", {
 	strings: [
-		"Welcome to <i>Steamagined</i>.<br> A portfolio focused on my Steam gaming!<br>Feel free to explore~ :D",
+		"Welcome to <i>Steamagined!</i>",
 	],
 	loop: false,
 	typeSpeed: 60,
@@ -10,10 +10,10 @@ var typed1 = new Typed("#text-animation-typing-1", {
 	startDelay: 2750,
 });
 
-function startTyped2() {
-	var typed2 = new Typed("#text-animation-typing-2", {
+function startTypedGoodbye() {
+	new Typed("#text-animation-goodbye", {
 		strings: [
-			"Thank you for visiting <i>Steamagined</i>!<br>I hope you enjoyed your stay.<br>Have a nice day~ :)",
+			"Thank you for visiting <i>Steamagined!</i><br>I hope you enjoyed your stay.<br>Have a nice day~ :)",
 		],
 		loop: false,
 		typeSpeed: 60,
@@ -27,7 +27,7 @@ const observer = new IntersectionObserver(
 	(entries, observer) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
-				startTyped2();
+				startTypedGoodbye();
 				observer.disconnect();
 			}
 		});
@@ -35,4 +35,4 @@ const observer = new IntersectionObserver(
 	{ threshold: 0.5 }
 );
 
-observer.observe(document.getElementById("text-animation-typing-2"));
+observer.observe(document.getElementById("text-animation-goodbye"));

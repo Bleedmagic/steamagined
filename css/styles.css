@@ -12,6 +12,27 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: Pixelify Sans;
+	src: url("../fonts/PixelifySans-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Pixelify Sans;
+	src: url(../fonts/PixelifySans-Bold.ttf) format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: VT323;
+	src: url(../fonts/VT323-Regular.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
 html {
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -48,6 +69,7 @@ body {
 	font-family: "Roboto", sans-serif;
 	background-color: var(--body-bg-color);
 	color: var(--body-text-color);
+	/* transition: color 0.3s ease; */
 }
 
 /* .container {
@@ -100,6 +122,11 @@ body {
 .header-title:active,
 .header-title:visited {
 	color: var(--title-color);
+}
+
+.hero-title {
+	color: var(--body-text-color);
+	transition: color 0.3s ease;
 }
 
 footer {
@@ -215,10 +242,6 @@ footer {
 	transform: translateY(0);
 }
 
-.hr-divider {
-	margin: 1rem 0;
-}
-
 section {
 	margin-bottom: 25px;
 }
@@ -301,8 +324,18 @@ section {
 	opacity: 0;
 }
 
+.hr-divider {
+	margin: 1rem 0;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .featurette-divider {
 	margin: 5rem 0;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .featurette-heading {
