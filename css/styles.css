@@ -78,6 +78,10 @@ body {
 	padding: 10px;
 } */
 
+/* .text-justify {
+    text-align: justify;
+} */
+
 .border-bottom {
 	border-bottom: 2px solid var(--bd-custom-bg) !important;
 }
