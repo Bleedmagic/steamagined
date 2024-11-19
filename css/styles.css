@@ -259,7 +259,7 @@ section {
 }
 
 .card-gradient-col1 {
-    background-image: linear-gradient(to right, #ff0099, #bd007d);
+	background-image: linear-gradient(to right, #ff0099, #bd007d);
 }
 
 .card-gradient-col2 {
@@ -271,7 +271,7 @@ section {
 }
 
 .card-gradient-col4 {
-    background-image: linear-gradient(to right, #004e92, #000428);
+	background-image: linear-gradient(to right, #004e92, #000428);
 }
 
 .img-rounded-square {
@@ -282,26 +282,18 @@ section {
 	margin-top: -20px;
 }
 
-#popup {
+#recommend-popup {
 	position: fixed;
-	bottom: 18px;
+	bottom: 50px;
 	left: 50%;
 	transform: translateX(-50%);
-	background-color: var(--bd-custom-bg);
-	color: white;
-	border-radius: 5px;
+	background-color: var(--body-bg-color);
+	color: var(--body-text-color);
+	border: 3px solid var(--bd-custom-bg);
+	border-radius: 10px;
 	padding: 5px 15px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	opacity: 1;
 	z-index: 2000;
-}
-
-#popup-close {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	color: white;
-	cursor: pointer;
 }
 
 #preloader {
@@ -329,6 +321,7 @@ section {
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
+	color: var(--body-text-color);
 }
 
 .featurette-divider {
@@ -336,6 +329,7 @@ section {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+	color: var(--body-text-color);
 }
 
 .featurette-heading {
@@ -379,6 +373,30 @@ section {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
+.scroll-down-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+
+.scroll-down-icon {
+	font-size: 50px;
+	color: var(--body-text-color);
+	animation: bounce 3s ease-in-out infinite;
+	cursor: pointer;
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(50px);
+	}
+}
+
 #myCarousel .carousel-inner img {
 	object-fit: cover;
 	width: 100%;
@@ -396,6 +414,18 @@ section {
 
 .carousel-item {
 	height: 32rem;
+}
+
+.carousel-indicators button {
+	width: 15px;
+	height: 15px;
+	background-color: #c5a3ff !important;
+	opacity: 0.5 !important;
+}
+
+.carousel-indicators .active {
+	background-color: #ff69b4 !important;
+	opacity: 1 !important;
 }
 
 @media (max-width: 575.98px) {

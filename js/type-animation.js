@@ -13,10 +13,10 @@ var typed1 = new Typed("#text-animation-welcome", {
 function startTypedGoodbye() {
 	new Typed("#text-animation-goodbye", {
 		strings: [
-			"Thank you for visiting <i>Steamagined!</i><br>I hope you enjoyed your stay.<br>Have a nice day~ :)",
+			"Thank you for visiting <i>Steamagined!</i><br>Have a wonderful day~ :)",
 		],
 		loop: false,
-		typeSpeed: 60,
+		typeSpeed: 50,
 		showCursor: true,
 		cursorChar: "_",
 		contentType: "html"
