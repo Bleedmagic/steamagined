@@ -1,81 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Scroll Animation Test</title>
-		<link rel="stylesheet" href="test-styles.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>jQuery UI Draggable - Default functionality</title>
+		<link
+			rel="stylesheet"
+			href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+		/>
+		<link rel="stylesheet" href="/resources/demos/style.css" />
+		<style>
+			#draggable {
+				width: 150px;
+				height: 150px;
+				padding: 0.5em;
+			}
+		</style>
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+		<script>
+			$(function () {
+				$("#draggable").draggable();
+			});
+		</script>
 	</head>
 	<body>
-		<header>
-			<h1>Welcome to My Scroll Animation Test</h1>
-		</header>
-
-		<main>
-			<!-- Section 1 -->
-			<section class="fade-in">
-				<div>
-					<h2>Section 1: Introduction</h2>
-					<p>Scroll down to see the animations in action!</p>
-				</div>
-			</section>
-
-			<!-- Section 2 -->
-			<section class="fade-in">
-				<div>
-					<h2>Section 2: Benefits of Animation</h2>
-					<ul>
-						<li>Animations make your site more engaging.</li>
-						<li>They guide the user's attention to key areas.</li>
-						<li>Scroll-triggered animations are modern and interactive.</li>
-					</ul>
-				</div>
-			</section>
-
-			<!-- Section 3 -->
-			<section class="fade-in">
-				<div>
-					<h2>Section 3: Example Content</h2>
-					<p>
-						Here's an example of a longer section to demonstrate how animations
-						can be applied to any content.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-						facilisi. Donec vehicula dolor nec nulla faucibus, ac blandit velit
-						tristique. Ut fringilla orci ut massa dictum, at consequat erat
-						ullamcorper.
-					</p>
-				</div>
-			</section>
-
-			<!-- Section 4 -->
-			<section class="fade-in">
-				<div>
-					<h2>Section 4: Conclusion</h2>
-					<p>
-						As you can see, scroll animations bring life to static web pages.
-						Try implementing them on your own!
-					</p>
-				</div>
-			</section>
-
-			<!-- Section 5 -->
-			<section class="fade-in">
-				<div>
-					<h2>Section 5: Thank You</h2>
-					<p>
-						Thanks for scrolling all the way! This concludes the demonstration.
-						😊
-					</p>
-				</div>
-			</section>
-		</main>
-
-		<footer>
-			<p>&copy; 2024 My Test Website</p>
-		</footer>
-
-		<script src="test-script.js"></script>
+		<div id="draggable" class="ui-widget-content">
+			<p>Drag me around</p>
+		</div>
 	</body>
 </html>

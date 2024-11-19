@@ -414,28 +414,33 @@
 		<!-- Main Content -->
 		<div class="container" style="max-width: 1000px">
 			<main>
-				<!-- Introduction Section -->
-				<section id="introduction" class="px-4 py-5">
-					<h1 class="text-center mb-5 fade-in" style="height: 200px">
+				<!-- Welcome Section -->
+				<section id="welcome" class="px-4 py-5">
+					<h1 class="text-center mb-5 fade-in" style="height: 100px">
 						<span id="text-animation-typing-1"></span>
 					</h1>
 				</section>
 
 				<hr class="hr-divider" />
 
-				<!-- Personal Achievements Section -->
-				<section id="personal-achievements" class="px-4 py-5 fade-in">
-					<h1 class="text-center mb-5">Personal Achievements</h1>
+				<!-- About Section -->
+				<section id="about" class="px-4 py-5"></section>
+
+				<hr class="hr-divider" />
+
+				<!-- Personal Milestones Section -->
+				<section id="personal-milestones" class="px-4 py-5">
+					<h1 class="text-center mb-5 fade-in">Personal Milestones</h1>
 					<div
-						class="row row-cols-1 row-cols-lg-3 align-items-stretch g-3 py-2"
+						class="row row-cols-1 row-cols-lg-3 align-items-stretch g-3 py-2 fade-in"
 					>
 						<div class="col">
 							<div
 								class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-gradient-col1"
 							>
 								<img
-									src="img/team-fortress-2.jpg"
-									alt="Team Fortress 2"
+									src="img/milestones/steamdb.png"
+									alt="SteamDB"
 									class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50 image-zoom"
 								/>
 								<div
@@ -445,17 +450,17 @@
 										class="pt-1 mt-1 mb-4 display-7 lh-2 fw-bold"
 										style="white-space: nowrap"
 									>
-										Team Fortress 2
+										Steam Playtime
 									</h3>
 									<ul class="d-flex list-unstyled mt-auto">
 										<li class="me-auto">
 											<i
-												class="bi bi-controller text-white"
+												class="bi bi-clock-history text-white"
 												style="font-size: 48px"
 											></i>
 										</li>
 										<li class="d-flex align-items-center">
-											<h4>5435 hours</h4>
+											<h4>10600+ hrs</h4>
 										</li>
 									</ul>
 								</div>
@@ -467,8 +472,8 @@
 								class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-gradient-col2"
 							>
 								<img
-									src="img/steam-profile.jpg"
-									alt="Team Fortress 2"
+									src="img/milestones/steam-profile.jpg"
+									alt="Steam Account"
 									class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50 image-zoom"
 								/>
 								<div
@@ -483,7 +488,7 @@
 									<ul class="d-flex list-unstyled mt-auto">
 										<li class="me-auto">
 											<i
-												class="bi bi-steam text-white"
+												class="bi bi-calendar-check text-white"
 												style="font-size: 48px"
 											></i>
 										</li>
@@ -500,8 +505,8 @@
 								class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-gradient-col3"
 							>
 								<img
-									src="img/steam-friends.png"
-									alt="Team Fortress 2"
+									src="img/milestones/steam-friends.png"
+									alt="Steam Friends"
 									class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50 image-zoom"
 								/>
 								<div
@@ -521,7 +526,40 @@
 											></i>
 										</li>
 										<li class="d-flex align-items-center">
-											<h4>714 friends</h4>
+											<h4>700+ friends</h4>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-4 mx-auto">
+							<div
+								class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-gradient-col4"
+							>
+								<img
+									src="img/milestones/steam-games.png"
+									alt="Steam Gamest"
+									class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50 image-zoom"
+								/>
+								<div
+									class="card-content d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+								>
+									<h3
+										class="pt-1 mt-1 mb-4 display-7 lh-2 fw-bold"
+										style="white-space: nowrap"
+									>
+										Steam Games
+									</h3>
+									<ul class="d-flex list-unstyled mt-auto">
+										<li class="me-auto">
+											<i
+												class="bi bi-controller text-white"
+												style="font-size: 48px"
+											></i>
+										</li>
+										<li class="d-flex align-items-center">
+											<h4>400+ Games</h4>
 										</li>
 									</ul>
 								</div>
@@ -529,158 +567,203 @@
 						</div>
 					</div>
 
-					<p class="text-center mt-5">WRITE SOMETHING HERE</p>
+					<p class="text-center mt-5 lead fade-in">
+						These milestones reflect my journey on Steam, where I’ve spent
+						countless hours immersed in games, built lasting friendships, and
+						expanded my gaming library. Each of these accomplishments represents
+						a piece of my passion and they motivate me to carry onward in this
+						dull, cruel world.
+					</p>
 				</section>
 
 				<hr class="hr-divider" />
 
 				<!-- Artworks Section-->
-				<section id="artworks" class="px-4 py-5 fade-in">
-					<h1 class="text-center mb-5">Artworks</h1>
-					<div
-						id="myCarousel"
-						class="carousel slide mb-6"
-						data-bs-ride="carousel"
-					>
-						<div class="carousel-indicators">
-							<button
-								type="button"
-								data-bs-target="#myCarousel"
-								data-bs-slide-to="0"
-								class="active"
-								aria-current="true"
-								aria-label="Slide 1"
-							></button>
-							<button
-								type="button"
-								data-bs-target="#myCarousel"
-								data-bs-slide-to="1"
-								aria-label="Slide 2"
-							></button>
-							<button
-								type="button"
-								data-bs-target="#myCarousel"
-								data-bs-slide-to="2"
-								aria-label="Slide 3"
-							></button>
-							<button
-								type="button"
-								data-bs-target="#myCarousel"
-								data-bs-slide-to="3"
-								aria-label="Slide 4"
-							></button>
-							<button
-								type="button"
-								data-bs-target="#myCarousel"
-								data-bs-slide-to="4"
-								aria-label="Slide 5"
-							></button>
-						</div>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img
-									src="img/artworks/art-1.png"
-									class="d-block w-100"
-									alt="First slide"
-								/>
-								<div class="container">
-									<div class="carousel-caption text-start"></div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img
-									src="img/artworks/art-2.png"
-									class="d-block w-100"
-									alt="Second slide"
-								/>
-								<div class="container">
-									<div class="carousel-caption"></div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img
-									src="img/artworks/art-3.png"
-									class="d-block w-100"
-									alt="Third slide"
-								/>
-								<div class="container">
-									<div class="carousel-caption text-end"></div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img
-									src="img/artworks/art-4.png"
-									class="d-block w-100"
-									alt="Fourth slide"
-								/>
-								<div class="container">
-									<div class="carousel-caption text-start"></div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img
-									src="img/artworks/art-5.png"
-									class="d-block w-100"
-									alt="Fifth slide"
-								/>
-								<div class="container">
-									<div class="carousel-caption text-end"></div>
-								</div>
-							</div>
-						</div>
-						<button
-							class="carousel-control-prev"
-							type="button"
-							data-bs-target="#myCarousel"
-							data-bs-slide="prev"
+				<section id="artworks" class="px-4 py-5">
+					<h1 class="text-center mb-5 fade-in">Artworks</h1>
+					<figure class="figure">
+						<div
+							id="myCarousel"
+							class="carousel slide mb-6 fade-in"
+							data-bs-ride="carousel"
 						>
-							<span
-								class="carousel-control-prev-icon"
-								aria-hidden="true"
-							></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button
-							class="carousel-control-next"
-							type="button"
-							data-bs-target="#myCarousel"
-							data-bs-slide="next"
+							<div class="carousel-indicators">
+								<button
+									type="button"
+									data-bs-target="#myCarousel"
+									data-bs-slide-to="0"
+									class="active"
+									aria-current="true"
+									aria-label="Slide 1"
+								></button>
+								<button
+									type="button"
+									data-bs-target="#myCarousel"
+									data-bs-slide-to="1"
+									aria-label="Slide 2"
+								></button>
+								<button
+									type="button"
+									data-bs-target="#myCarousel"
+									data-bs-slide-to="2"
+									aria-label="Slide 3"
+								></button>
+								<button
+									type="button"
+									data-bs-target="#myCarousel"
+									data-bs-slide-to="3"
+									aria-label="Slide 4"
+								></button>
+								<button
+									type="button"
+									data-bs-target="#myCarousel"
+									data-bs-slide-to="4"
+									aria-label="Slide 5"
+								></button>
+							</div>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img
+										src="img/artworks/art-1.png"
+										class="d-block w-100"
+										alt="First slide"
+									/>
+									<div class="container">
+										<div class="carousel-caption text-start"></div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img
+										src="img/artworks/art-2.png"
+										class="d-block w-100"
+										alt="Second slide"
+									/>
+									<div class="container">
+										<div class="carousel-caption"></div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img
+										src="img/artworks/art-3.png"
+										class="d-block w-100"
+										alt="Third slide"
+									/>
+									<div class="container">
+										<div class="carousel-caption text-end"></div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img
+										src="img/artworks/art-4.png"
+										class="d-block w-100"
+										alt="Fourth slide"
+									/>
+									<div class="container">
+										<div class="carousel-caption text-start"></div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img
+										src="img/artworks/art-5.png"
+										class="d-block w-100"
+										alt="Fifth slide"
+									/>
+									<div class="container">
+										<div class="carousel-caption text-end"></div>
+									</div>
+								</div>
+							</div>
+							<button
+								class="carousel-control-prev"
+								type="button"
+								data-bs-target="#myCarousel"
+								data-bs-slide="prev"
+							>
+								<span
+									class="carousel-control-prev-icon"
+									aria-hidden="true"
+								></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button
+								class="carousel-control-next"
+								type="button"
+								data-bs-target="#myCarousel"
+								data-bs-slide="next"
+							>
+								<span
+									class="carousel-control-next-icon"
+									aria-hidden="true"
+								></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+						<figcaption
+							class="figure-caption text-center fade-in"
+							style="margin-top: -30px"
 						>
-							<span
-								class="carousel-control-next-icon"
-								aria-hidden="true"
-							></span>
-							<span class="visually-hidden">Next</span>
-						</button>
+							Credits to id/lordion95/ for Figure 1 and @hujeon for Figure 2
+						</figcaption>
+					</figure>
+
+					<div class="container pfp-artworks" style="margin-top: 3rem">
+						<div class="row fade-in">
+							<div class="col-lg-6 text-center">
+								<img
+									src="img/artworks/bleedmagicbyscout2.png"
+									alt="Portrait by Scout2"
+									class="img-fluid rounded-circle"
+									style="max-width: 250px; max-height: 250px; object-fit: cover"
+								/>
+								<h2 class="fw-normal">Retrowave</h2>
+								<p>by Scout2</p>
+							</div>
+							<div class="col-lg-6 text-center">
+								<img
+									src="img/artworks/bleedmagicbydrain.png"
+									alt="Portrait by Drain"
+									class="img-fluid rounded-circle"
+									style="max-width: 250px; max-height: 250px; object-fit: cover"
+								/>
+								<h2 class="fw-normal">Madness</h2>
+								<p>by Drain</p>
+							</div>
+						</div>
 					</div>
 
-					<p class="text-center mt-5">WRITE SOMETHING HERE</p>
+					<blockquote class="blockquote text-center fade-in">
+						<p>
+							How are they so good at making things?! Man, I love my creative
+							artist friends.
+						</p>
+						<footer class="blockquote-footer">
+							Bleedmagic during his <cite title="Source Title">Self-Talk</cite>
+						</footer>
+					</blockquote>
 				</section>
 
 				<hr class="hr-divider" />
 
 				<!-- Memorable Moments Section -->
-				<section id="memorable-moments" class="px-4 py-5 fade-in">
-					<h1 class="text-center mb-5">Memorable Moments</h1>
+				<section id="memorable-moments" class="px-4 py-5">
+					<h1 class="text-center mb-5 fade-in">Memorable Moments</h1>
 
 					<div class="row featurette mt-4 fade-in">
 						<div class="col-md-7">
 							<h2 class="featurette-heading fw-normal lh-1">
-								Don Quixote's Canto <br />
+								El Sueño Imposible <br />
 								<span class="text-body-secondary">Limbus Company</span>
 							</h2>
 							<p class="lead">
-								Canto 7 just released last month and it had me bawling my eyes
-								out as it tackles about family, dreams, and loneliness.
-							</p>
-							<p>
-								To dream the impossible dream. To fight the unbeatable foe...
+								Don Quixote's Canto just released last month and it had me
+								bawling my eyes out as it tackles about family, loneliness,
+								pursuance—to dream the impossible dream.
 							</p>
 						</div>
 						<div class="col-md-5">
 							<img
-								src="img/don-quixote.jpg"
-								alt="Descriptive text for the image"
+								src="img/memorables/don-quixote.jpg"
+								alt="Glory to Project Moon"
 								class="featurette-image img-fluid mx-auto img-rounded-square"
 								width="500"
 								height="500"
@@ -693,15 +776,19 @@
 					<div class="row featurette fade-in">
 						<div class="col-md-7 order-md-2">
 							<h2 class="featurette-heading fw-normal lh-1">
-								Placeholder
-								<span class="text-body-secondary">Placeholder</span>
+								Timeless Masterpiece <br />
+								<span class="text-body-secondary">Team Fortress 2</span>
 							</h2>
-							<p class="lead">Placeholder</p>
+							<p class="lead">
+								Everyone's doing the conga! To think that we were all just a
+								bunch of people sitting at our computer sharing a brief, yet
+								silly moment together. This is the soul of the game.
+							</p>
 						</div>
 						<div class="col-md-5 order-md-1">
 							<img
-								src="img/bleedmagicbydrain.png"
-								alt="Descriptive text for the image"
+								src="img/memorables/conga.png"
+								alt="Thanks, Lazy"
 								class="featurette-image img-fluid mx-auto img-rounded-square"
 								width="500"
 								height="500"
@@ -714,21 +801,85 @@
 					<div class="row featurette fade-in">
 						<div class="col-md-7">
 							<h2 class="featurette-heading fw-normal lh-1">
-								Placeholder
-								<span class="text-body-secondary">Placeholder</span>
+								The Ultimate Experience <br />
+								<span class="text-body-secondary">CrossCode</span>
 							</h2>
-							<p class="lead">Placeholder</p>
+							<p class="lead">
+								I remember this was a boss battle and I dealt
+								63706374952018506040 damage in this screenshot. This game has
+								such an amazing story and it is built using HTML5 and impact.js!
+								I totally recommend it.
+							</p>
 						</div>
 						<div class="col-md-5">
 							<img
-								src="img/bleedmagicbydrain.png"
-								alt="Descriptive text for the image"
+								src="img/memorables/the-ultimate-experience.png"
+								alt="That is why we create"
 								class="featurette-image img-fluid mx-auto img-rounded-square"
 								width="500"
 								height="500"
 							/>
 						</div>
 					</div>
+
+					<hr class="featurette-divider" />
+
+					<div class="row featurette fade-in">
+						<div class="col-md-7 order-md-2">
+							<h2 class="featurette-heading fw-normal lh-1">
+								For The Story...?<br />
+								<span class="text-body-secondary">Third Crisis</span>
+							</h2>
+							<p class="lead">
+								Through various means, I've built a collection of eroges that
+								explore storytelling, creativity, and gameplay in unique ways.
+								There's just something about them.
+							</p>
+						</div>
+						<div class="col-md-5 order-md-1">
+							<img
+								src="img/memorables/h-game.jpg"
+								alt="Stayed for the story"
+								class="featurette-image img-fluid mx-auto img-rounded-square"
+								width="500"
+								height="500"
+							/>
+						</div>
+					</div>
+					<hr class="featurette-divider" />
+
+					<div class="row featurette fade-in">
+						<div class="col-md-7">
+							<h2 class="featurette-heading fw-normal lh-1">
+								Sussy Baka Amogus<br />
+								<span class="text-body-secondary">Among Us</span>
+							</h2>
+							<p class="lead">
+								Man, I remember playing this back in 2020 during its rise in
+								popularity. I love meme culture, especially those spawned in
+								games. To the point that almost everything in the real world is
+								a reference.
+							</p>
+						</div>
+						<div class="col-md-5">
+							<img
+								src="img/memorables/amogus.png"
+								alt="When the impostor is sus"
+								class="featurette-image img-fluid mx-auto img-rounded-square"
+								width="500"
+								height="500"
+							/>
+						</div>
+					</div>
+				</section>
+
+				<hr class="hr-divider" />
+
+				<!-- Goodbye Section -->
+				<section id="goodbye" class="px-4 py-5">
+					<h2 class="text-center mb-5 fade-in" style="height: 50px">
+						<span id="text-animation-typing-2"></span>
+					</h2>
 				</section>
 			</main>
 		</div>

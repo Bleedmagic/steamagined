@@ -192,19 +192,6 @@ footer {
 	z-index: 1500;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-	background-color: rgba(0, 0, 0, 0.75);
-	border: 2px solid rgba(0, 0, 0, 0.8);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-#myCarousel .carousel-inner img {
-	height: 400px;
-	object-fit: cover;
-	width: 100%;
-}
-
 .modal.fade .modal-dialog {
 	transform: translateY(-30px);
 	opacity: 0;
@@ -249,7 +236,7 @@ section {
 }
 
 .card-gradient-col1 {
-	background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    background-image: linear-gradient(to right, #ff0099, #bd007d);
 }
 
 .card-gradient-col2 {
@@ -260,12 +247,8 @@ section {
 	background-image: linear-gradient(to right, #4caf50, #009688);
 }
 
-.featurette-divider {
-	margin: 5rem 0;
-}
-
-.featurette-heading {
-	letter-spacing: -0.05rem;
+.card-gradient-col4 {
+    background-image: linear-gradient(to right, #004e92, #000428);
 }
 
 .img-rounded-square {
@@ -306,7 +289,7 @@ section {
 	height: 100vh;
 	background-color: var(--body-bg-color);
 	z-index: 2000;
-	background-image: url(../img/tf2-heavy.gif);
+	background-image: url(../img/gifs/tf2-heavy.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 25%;
@@ -318,9 +301,68 @@ section {
 	opacity: 0;
 }
 
+.featurette-divider {
+	margin: 5rem 0;
+}
+
+.featurette-heading {
+	letter-spacing: -0.05rem;
+}
+
+.featurette-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.featurette {
+	display: flex;
+}
+.featurette .col-md-7,
+.featurette .col-md-5 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .navbar-collapse {
 	display: flex;
 	justify-content: flex-end;
+}
+
+.pfp-artworks .col-lg-6 {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.pfp-artworks .col-lg-6 p {
+	margin-right: 0.75rem;
+	margin-left: 0.75rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: rgba(0, 0, 0, 0.75);
+	border: 2px solid rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#myCarousel .carousel-inner img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.carousel {
+	margin-bottom: 4rem;
+}
+
+.carousel-caption {
+	bottom: 3rem;
+	z-index: 10;
+}
+
+.carousel-item {
+	height: 32rem;
 }
 
 @media (max-width: 575.98px) {
