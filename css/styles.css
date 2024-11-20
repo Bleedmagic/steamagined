@@ -71,6 +71,7 @@ body {
 	background-color: var(--body-bg-color);
 	color: var(--body-text-color);
 	transition: background-color 0.5s ease, color 0.5s ease;
+
 	/* background: var(--body-bg-color);
 	background-image: radial-gradient(var(--bd-custom-bg) 1px, transparent 1px);
 	background-size: 10px 10px; */
@@ -84,9 +85,17 @@ body {
 	padding: 10px;
 } */
 
-/* .text-justify {
-    text-align: justify;
+/* .hr-divider {
+	margin: 1rem 0;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--body-text-color);
 } */
+
+.text-justify {
+	text-align: justify;
+}
 
 .border-bottom {
 	border-bottom: 2px solid var(--bd-custom-bg) !important;
@@ -349,6 +358,21 @@ section {
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+#other-popup {
+	position: fixed;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--body-bg-color);
+	color: var(--body-text-color);
+	border: 3px solid var(--bd-custom-bg);
+	border-radius: 10px;
+	padding: 5px 15px;
+	opacity: 1;
+	z-index: 2000;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 #preloader {
 	position: fixed;
 	top: 0;
@@ -357,7 +381,7 @@ section {
 	height: 100vh;
 	background-color: var(--body-bg-color);
 	z-index: 2000;
-	background-image: url(../img/gifs/tf2-heavy.gif);
+	background-image: url(../img/gifs/crow.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 25%;
@@ -369,14 +393,6 @@ section {
 #preloader.hidden {
 	opacity: 0;
 }
-
-/* .hr-divider {
-	margin: 1rem 0;
-	width: 95%;
-	margin-left: auto;
-	margin-right: auto;
-	color: var(--body-text-color);
-} */
 
 .featurette-divider {
 	margin: 5rem 0;
@@ -447,7 +463,7 @@ section {
 		transform: translateY(0);
 	}
 	50% {
-		transform: translateY(50px);
+		transform: translateY(45px);
 	}
 }
 
@@ -473,6 +489,7 @@ section {
 .carousel-indicators button {
 	width: 15px;
 	height: 15px;
+	margin-top: -40px;
 	background-color: #c5a3ff !important;
 	opacity: 0.5 !important;
 }
@@ -480,6 +497,37 @@ section {
 .carousel-indicators .active {
 	background-color: #ff69b4 !important;
 	opacity: 1 !important;
+}
+
+.wave-hand {
+	display: inline-block;
+	animation: wave 1.5s infinite ease-in-out;
+	font-size: 30px;
+}
+
+@keyframes wave {
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(20deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
+	60% {
+		transform: rotate(10deg);
+	}
+	80% {
+		transform: rotate(-5deg);
+	}
+}
+
+@media (max-width: 480px) {
+	#preloader {
+		background-size: 75%;
+	}
 }
 
 @media (max-width: 575.98px) {
@@ -504,6 +552,10 @@ section {
 
 	.navbar-nav .nav-item {
 		margin: 0 10px;
+	}
+
+	#preloader {
+		background-size: 50%;
 	}
 }
 
