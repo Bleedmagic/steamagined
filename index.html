@@ -240,20 +240,9 @@
 			aria-hidden="true"
 		>
 			<div class="modal-dialog modal-dialog-centered">
-				<div
-					class="modal-content"
-					style="
-						background-color: #3a2c3d;
-						color: #f4d9e7;
-						border: 1px solid #a0788e;
-					"
-				>
-					<div class="modal-header" style="border-bottom: 1px solid #a0788e">
-						<h5
-							class="modal-title"
-							id="shortcutsModalLabel"
-							style="color: #e5aac4"
-						>
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="shortcutsModalLabel">
 							Keyboard Shortcuts
 						</h5>
 						<button
@@ -261,64 +250,19 @@
 							class="btn-close"
 							data-bs-dismiss="modal"
 							aria-label="Close"
-							style="
-								filter: invert(80%) sepia(25%) saturate(450%) hue-rotate(300deg)
-									brightness(90%) contrast(80%);
-							"
 						></button>
 					</div>
 					<div class="modal-body">
-						<p>
-							<kbd
-								style="
-									background-color: #5e465a;
-									color: #f4d9e7;
-									padding: 0.2rem 0.4rem;
-									border-radius: 0.2rem;
-								"
-								>→</kbd
-							>
-							: Play/Pause Music
-						</p>
-						<p>
-							<kbd
-								style="
-									background-color: #5e465a;
-									color: #f4d9e7;
-									padding: 0.2rem 0.4rem;
-									border-radius: 0.2rem;
-								"
-								>←</kbd
-							>
-							: Change Themes
-						</p>
-						<p>
-							<kbd
-								style="
-									background-color: #5e465a;
-									color: #f4d9e7;
-									padding: 0.2rem 0.4rem;
-									border-radius: 0.2rem;
-								"
-								>↑</kbd
-							>
-							: Scroll to Top
-						</p>
+						<p><kbd>→</kbd> : Play / Pause Music</p>
+						<p><kbd>←</kbd> : Change Themes</p>
+						<p><kbd>↑</kbd> : Scroll to Top</p>
 					</div>
-					<div class="modal-footer" style="border-top: 1px solid #a0788e">
+					<div class="modal-footer">
 						<button
 							type="button"
 							class="btn btn-primary"
 							data-bs-dismiss="modal"
 							id="gotItBtn"
-							style="
-								background-color: #a0788e;
-								border-color: #7a5e6d;
-								color: #f4d9e7;
-								transition: background-color 0.3s ease, transform 0.2s ease;
-							"
-							onmouseover="this.style.backgroundColor='#7a5e6d'; this.style.transform='scale(1.05)';"
-							onmouseout="this.style.backgroundColor='#a0788e'; this.style.transform='scale(1)';"
 						>
 							Got it!
 						</button>

@@ -33,8 +33,9 @@
 	font-style: normal;
 }
 
-html {
-	transition: background-color 0.3s ease, color 0.3s ease;
+html,
+body {
+	user-select: none;
 }
 
 html[data-bs-theme="light"] {
@@ -69,7 +70,12 @@ body {
 	font-family: "Roboto", sans-serif;
 	background-color: var(--body-bg-color);
 	color: var(--body-text-color);
-	/* transition: color 0.3s ease; */
+	transition: background-color 0.5s ease, color 0.5s ease;
+	/* background: var(--body-bg-color);
+	background-image: radial-gradient(var(--bd-custom-bg) 1px, transparent 1px);
+	background-size: 10px 10px; */
+	/* background: linear-gradient(135deg, var(--body-bg-color), var(--bd-custom-bg)); */
+	/* background: radial-gradient(circle, var(--bd-custom-bg) 30%, var(--body-bg-color) 100%); */
 }
 
 /* .container {
@@ -234,6 +240,48 @@ footer {
 	opacity: 1;
 }
 
+.modal-backdrop {
+	background-color: var(--body-bg-color);
+}
+
+.modal-content {
+	background-color: var(--body-bg-color);
+	color: var(--body-text-color);
+	border: 3px solid var(--bd-custom-bg);
+	transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.modal-header {
+	border-bottom: 1px solid var(--bd-custom-bg);
+}
+
+.modal-footer {
+	border-top: 1px solid var(--bd-custom-bg);
+}
+
+.modal-title {
+	color: var(--title-color);
+}
+
+.modal-body kbd {
+	background-color: var(--bd-custom-hover);
+	color: white;
+	padding: 0.2rem 0.4rem;
+	border-radius: 0.2rem;
+}
+
+#gotItBtn {
+	background-color: var(--bd-custom-bg);
+	border-color: var(--link-hover-color);
+	color: white;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#gotItBtn:hover {
+	background-color: var(--bd-custom-hover);
+	transform: scale(1.05);
+}
+
 .fade-in {
 	opacity: 0;
 	transform: translateY(20px);
@@ -298,6 +346,7 @@ section {
 	padding: 5px 15px;
 	opacity: 1;
 	z-index: 2000;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #preloader {
@@ -314,6 +363,7 @@ section {
 	background-size: 25%;
 	opacity: 1;
 	transition: opacity 1s ease-out;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #preloader.hidden {
