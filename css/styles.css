@@ -370,17 +370,17 @@ section {
 	opacity: 0;
 }
 
-.hr-divider {
+/* .hr-divider {
 	margin: 1rem 0;
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 	color: var(--body-text-color);
-}
+} */
 
 .featurette-divider {
 	margin: 5rem 0;
-	width: 80%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	color: var(--body-text-color);
@@ -435,7 +435,7 @@ section {
 }
 
 .scroll-down-icon {
-	font-size: 50px;
+	font-size: 75px;
 	color: var(--body-text-color);
 	animation: bounce 3s ease-in-out infinite;
 	cursor: pointer;
