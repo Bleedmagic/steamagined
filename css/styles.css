@@ -128,30 +128,29 @@ body {
 	transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.custom-bg {
-	background-color: var(--bd-custom-bg);
-	color: var(--body-text-color);
-}
-
-.custom-bg h2 {
-	color: var(--title-color);
-}
-
-.custom-bg p {
-	color: var(--body-text-color);
-}
-
-.custom-border {
+.jumbo-with-border {
 	background-color: var(--body-bg-color);
 	color: var(--body-text-color);
 	border: 2px solid var(--bd-custom-rgb);
 }
 
-.custom-border h2 {
+.jumbo-with-border h2 {
 	color: var(--title-color);
 }
 
-.custom-border p {
+.jumbo-with-border p {
+	color: var(--body-text-color);
+}
+
+.jumbo-with-noborder {
+	color: var(--body-text-color);
+}
+
+.jumbo-with-noborder h2 {
+	color: var(--title-color);
+}
+
+.jumbo-with-noborder p {
 	color: var(--body-text-color);
 }
 
