@@ -79,6 +79,14 @@ html[data-bs-theme="dark"] .overlay {
 	background-color: rgba(46, 0, 62, 0.7);
 }
 
+html[data-bs-theme="light"] body {
+    text-shadow: 3px 3px 6px rgba(74, 26, 99, 0.4);
+}
+
+html[data-bs-theme="dark"] body {
+    text-shadow: 3px 3px 6px rgba(209, 167, 255, 0.4);
+}
+
 body {
 	font-family: "Roboto", sans-serif;
 	background-color: var(--body-bg-color);
