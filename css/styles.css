@@ -84,7 +84,7 @@ body {
 	background-color: var(--body-bg-color);
 	color: var(--body-text-color);
 	transition: background-color 0.5s ease, color 0.5s ease;
-	background-image: radial-gradient(var(--body-text-color) 1px, transparent 1px);
+	background-image: radial-gradient(var(--bd-custom-active) 2px, transparent 2px);
 	background-size: 10px 10px; 
 	background-attachment: fixed;
 }
