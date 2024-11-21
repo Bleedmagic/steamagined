@@ -80,11 +80,11 @@ html[data-bs-theme="dark"] .overlay {
 }
 
 html[data-bs-theme="light"] body {
-    text-shadow: 3px 3px 6px rgba(74, 26, 99, 0.4);
+	text-shadow: 3px 3px 6px rgba(74, 26, 99, 0.4);
 }
 
 html[data-bs-theme="dark"] body {
-    text-shadow: 3px 3px 6px rgba(209, 167, 255, 0.4);
+	text-shadow: 3px 3px 6px rgba(209, 167, 255, 0.4);
 }
 
 body {
@@ -92,14 +92,17 @@ body {
 	background-color: var(--body-bg-color);
 	color: var(--body-text-color);
 	transition: background-color 0.5s ease, color 0.5s ease;
-	background-image: radial-gradient(var(--bd-custom-active) 2px, transparent 2px);
-	background-size: 10px 10px; 
+	background-image: radial-gradient(
+		var(--bd-custom-active) 2px,
+		transparent 2px
+	);
+	background-size: 10px 10px;
 	background-attachment: fixed;
 }
 
 .container {
 	background-image: radial-gradient(var(--bd-custom-bg) 1px, transparent 1px);
-	background-size: 10px 10px; 
+	background-size: 10px 10px;
 	background-color: var(--body-bg-color);
 }
 
@@ -271,6 +274,11 @@ footer {
 	border: none;
 	cursor: pointer;
 	z-index: 1500;
+	transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+	background-color: var(--bd-custom-hover);
 }
 
 .modal.fade .modal-dialog {
@@ -381,21 +389,6 @@ section {
 #recommend-popup {
 	position: fixed;
 	bottom: 50px;
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: var(--body-bg-color);
-	color: var(--body-text-color);
-	border: 3px solid var(--bd-custom-bg);
-	border-radius: 10px;
-	padding: 5px 15px;
-	opacity: 1;
-	z-index: 2000;
-	transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#other-popup {
-	position: fixed;
-	top: 50px;
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: var(--body-bg-color);
