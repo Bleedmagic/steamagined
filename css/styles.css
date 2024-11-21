@@ -84,27 +84,16 @@ body {
 	background-color: var(--body-bg-color);
 	color: var(--body-text-color);
 	transition: background-color 0.5s ease, color 0.5s ease;
-
-	/* background: var(--body-bg-color);
-	background-image: radial-gradient(var(--bd-custom-bg) 1px, transparent 1px);
-	background-size: 10px 10px; */
-	/* background: linear-gradient(135deg, var(--body-bg-color), var(--bd-custom-bg)); */
-	/* background: radial-gradient(circle, var(--bd-custom-bg) 30%, var(--body-bg-color) 100%); */
+	background-image: radial-gradient(var(--body-text-color) 1px, transparent 1px);
+	background-size: 10px 10px; 
+	background-attachment: fixed;
 }
 
-/* .container {
-	border-left: 2px solid var(--bd-custom-bg);
-	border-right: 2px solid var(--bd-custom-bg);
-	padding: 10px;
-} */
-
-/* .hr-divider {
-	margin: 1rem 0;
-	width: 95%;
-	margin-left: auto;
-	margin-right: auto;
-	color: var(--body-text-color);
-} */
+.container {
+	background-image: radial-gradient(var(--bd-custom-bg) 1px, transparent 1px);
+	background-size: 10px 10px; 
+	background-color: var(--body-bg-color);
+}
 
 .text-justify {
 	text-align: justify;
@@ -128,33 +117,27 @@ body {
 	transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
+.featurette-divider {
+	margin: 5rem 0;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--body-text-color);
+}
+
 .social-icon-custom {
 	color: var(--link-color);
 }
 
-.jumbo-with-border {
-	background-color: var(--body-bg-color);
+.no-border {
 	color: var(--body-text-color);
-	border: 2px solid var(--bd-custom-rgb);
 }
 
-.jumbo-with-border h2 {
+.no-border h2 {
 	color: var(--title-color);
 }
 
-.jumbo-with-border p {
-	color: var(--body-text-color);
-}
-
-.jumbo-with-noborder {
-	color: var(--body-text-color);
-}
-
-.jumbo-with-noborder h2 {
-	color: var(--title-color);
-}
-
-.jumbo-with-noborder p {
+.no-border p {
 	color: var(--body-text-color);
 }
 
@@ -235,6 +218,7 @@ footer {
 	padding: 15px 15px;
 	display: flex;
 	align-items: center;
+	border-radius: 10px;
 	transition: background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -435,14 +419,6 @@ section {
 
 #preloader.hidden {
 	opacity: 0;
-}
-
-.featurette-divider {
-	margin: 5rem 0;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	color: var(--body-text-color);
 }
 
 .featurette-heading {
