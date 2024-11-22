@@ -1,6 +1,8 @@
 # Steamagined: A Portfolio on Gaming
 
-This portfolio will showcase my passion for gaming, specifically focusing on my Steam collection, favorite games, gaming achievements, and the memories I have made along the way.
+This website showcases my passion for gaming, specifically
+focusing on my Steam account, favorite game, personal
+milestones, artworks, and the memories made along the way.
 
 ## Tech Used
 
@@ -16,6 +18,7 @@ This portfolio will showcase my passion for gaming, specifically focusing on my 
 - Responsive
 - Play an audio
 - Theme Switcher
+- Auto-scroll up
 
 ## Contributions
 
