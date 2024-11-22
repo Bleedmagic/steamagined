@@ -1,7 +1,7 @@
 let isScrolling = false;
 
 $(window).scroll(function () {
-	if ($(document).height() - $(window).scrollTop() - $(window).height() < 10) {
+	if ($(window).scrollTop() > 10) {
 		$("#scrollToTopBtn").fadeIn();
 	} else {
 		$("#scrollToTopBtn").fadeOut();

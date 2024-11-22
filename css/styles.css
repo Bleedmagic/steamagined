@@ -393,7 +393,7 @@ section {
 	transform: translateX(-50%);
 	background-color: var(--body-bg-color);
 	color: var(--body-text-color);
-	border: 3px solid var(--bd-custom-bg);
+	border: 2px solid var(--bd-custom-bg);
 	border-radius: 10px;
 	padding: 5px 15px;
 	opacity: 1;
