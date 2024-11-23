@@ -12,7 +12,7 @@ milestones, artworks, and the memories made along the way.
 - Bootstrap
 - JQuery
 
-## Featuresa
+## Features
 
 - Typing animation using [Typed.js](https://mattboldt.com/demos/typed-js/)
 - Responsive
