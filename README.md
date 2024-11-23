@@ -1,4 +1,4 @@
-# Steamagined: A Portfolio on Gaming
+# Steamagined: A Portfolio on my Steam Gaming
 
 This website showcases my passion for gaming, specifically
 focusing on my Steam account, favorite game, personal
